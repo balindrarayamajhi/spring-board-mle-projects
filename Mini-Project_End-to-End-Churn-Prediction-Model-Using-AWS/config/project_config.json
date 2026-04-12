@@ -1,0 +1,16 @@
+{
+  "region": "us-east-2",
+  "pipeline_name": "CustomerChurnXGBoostPipeline",
+  "model_package_group_name": "CustomerChurnXGBoostPackageGroup",
+  "base_job_prefix": "sagemaker-studio-380267955329-u0h39w7wfo-churn",
+  "processing_instance_type": "ml.m5.xlarge",
+  "training_instance_type": "ml.m5.xlarge",
+  "training_instance_count": 1,
+  "endpoint_instance_type": "ml.m5.large",
+  "xgboost_version": "1.7-1",
+  "auc_threshold": 0.72,
+  "input_data_s3_uri": "s3://balindra-sagemaker/storedata.csv",
+  "pipeline_root": "s3://sagemaker-studio-380267955329-xvvghy9x2qr/churn/pipeline-root",
+  "feature_store_offline_s3_uri": "s3://sagemaker-studio-380267955329-u0h39w7wfo/churn/feature-store/offline",
+  "feature_group_name_prefix": "customer-churn-features"
+}
